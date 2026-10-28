@@ -18,3 +18,7 @@ wandb_runs_cache.pkl
 
 # Unused intermediate kept locally
 data/csv_Files/SCOREablation_plot_data.csv
+
+# Local extension runs and dependency caches
+/local_runs/
+/.cache/

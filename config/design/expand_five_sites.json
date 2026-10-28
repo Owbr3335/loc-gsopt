@@ -1,0 +1,25 @@
+{
+  "name": "Five existing sites — add two for LEO and MEO",
+  "existing_sites": [
+    {"name": "Colorado example", "longitude": -105.0, "latitude": 40.0},
+    {"name": "California example", "longitude": -118.0, "latitude": 35.0},
+    {"name": "Spain example", "longitude": -4.0, "latitude": 40.0},
+    {"name": "South Africa example", "longitude": 28.0, "latitude": -26.0},
+    {"name": "Japan example", "longitude": 138.0, "latitude": 36.0}
+  ],
+  "new_sites": 2,
+  "geography": {
+    "country_minimums": {"USA": 1, "AUS": 1},
+    "country_maximums": {"USA": 2},
+    "excluded_countries": ["ATA"],
+    "min_separation_km": 300
+  },
+  "satellites": [
+    {"name": "LEO-1", "preset": "LEO"},
+    {"name": "MEO-1", "preset": "MEO"}
+  ],
+  "propagation": {"duration_s": 86400, "step_s": 60, "elevation_min_deg": 10},
+  "link": {"type": "fixed"},
+  "minimum_contact_s": 180,
+  "search": {"seed": 42, "starts_per_move": 2, "evaluations_per_start": 30, "max_cycles": 2}
+}

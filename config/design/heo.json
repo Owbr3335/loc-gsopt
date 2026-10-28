@@ -1,0 +1,39 @@
+{
+  "name": "HEO supplied orbit",
+  "geography": {
+    "station_count": 2,
+    "country_minimums": {
+      "USA": 1,
+      "AUS": 1
+    },
+    "excluded_countries": [
+      "ATA"
+    ],
+    "min_separation_km": 300
+  },
+  "propagation": {
+    "duration_s": 86400,
+    "step_s": 60,
+    "elevation_min_deg": 10
+  },
+  "minimum_contact_s": 180,
+  "search": {
+    "seed": 42,
+    "starts_per_move": 1,
+    "evaluations_per_start": 18,
+    "max_cycles": 1
+  },
+  "link": {
+    "type": "fixed"
+  },
+  "orbits": [
+    {
+      "name": "heo",
+      "semi_major_axis_km": 26600,
+      "eccentricity": 0.72,
+      "inclination_deg": 63.4,
+      "raan_deg": 140,
+      "argument_perigee_deg": 270
+    }
+  ]
+}
